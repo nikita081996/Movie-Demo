@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".home.view_controller.HomeActivity">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    android:orientation="vertical"
+
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+        <TextView
+            android:id="@+id/top_rated_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/top_rated"
+            android:padding="3sp"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:layout_weight="0.7"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/top_rated_view_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:layout_weight="0.3"
+                android:padding="3sp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_top_rated"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:scrollbars="horizontal" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/upcoming_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upcoming"
+                android:padding="3sp"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:layout_weight="0.7"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/upcoming_view_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:layout_weight="0.3"
+                android:padding="3sp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_upcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:scrollbars="horizontal"
+        />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/now_playing_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/now_playing"
+                android:padding="3sp"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:layout_weight="0.7"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/now_playing_view_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:layout_weight="0.3"
+                android:padding="3sp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_now_playing"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:scrollbars="horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/popular_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popular"
+                android:padding="3sp"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:layout_weight="0.7"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/popular_view_all_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/view_all"
+                android:layout_weight="0.3"
+                android:padding="3sp"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_popular"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:scrollbars="horizontal" />
+</LinearLayout>
+    </ScrollView>
